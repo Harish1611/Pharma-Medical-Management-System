@@ -14,7 +14,7 @@ const WelcomBannerCarousel = () => {
       alt=""
     />
   ));
-
+   
   return (
     <AliceCarousel
       mouseTracking
