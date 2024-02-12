@@ -1,8 +1,12 @@
-import React from 'react'
+import React from 'react';
+import WelcomBannerCarousel from './WelcomBannerCarousel';
 
 const WelcomBanner = () => {
   return (
-    <div>WelcomBanner</div>
+    <div> 
+      <WelcomBannerCarousel />
+
+    </div>
   )
 }
 

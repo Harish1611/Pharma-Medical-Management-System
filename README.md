@@ -5,8 +5,10 @@
 
 </h2>
 
-Pharma Medical Management System is a MERN Application which developed with the features of Pharma Medical Data Tracking, Processing and Report Generation Management System.
+## Status: Development
 
+Pharma Medical Management System is a MERN Application which developed with the features of Pharma Medical Data Tracking, Processing and Report Generation Management System.
+*Note: This is frontend repository.
 
 
 ## Tools & Technologies
