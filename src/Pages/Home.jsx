@@ -1,6 +1,7 @@
 import React from 'react';
 import WelcomBanner from '../Components/Home/WelcomBanner';
 import Nav from '../Components/Nav/Nav';
+import Footer from '../Components/Footer/Footer';
 
 const Home = () => {
   return (
@@ -9,6 +10,9 @@ const Home = () => {
         <h1 className='black'>Home</h1>
       
          <WelcomBanner />
+
+
+         <Footer />
            
         </div>
   )
