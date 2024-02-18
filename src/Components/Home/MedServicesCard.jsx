@@ -1,36 +1,29 @@
 import React from 'react';
 import PrecisionManufacturingIcon from '@mui/icons-material/PrecisionManufacturing';
+import PublishedWithChangesIcon from '@mui/icons-material/PublishedWithChanges';
+import SummarizeIcon from '@mui/icons-material/Summarize';
+import LocalShippingIcon from '@mui/icons-material/LocalShipping';
+
 import { Grid } from '@mui/material';
 
 
-
 const MedServicesCard = ({ cardData }) => {
-    // Check if cardData is undefined or not an array
-    if (!Array.isArray(cardData)) {
-      // Return null or handle the case where cardData is not an array
-      return null;
-    }
-  
-     console.log(cardData)
-    // Map over cardData since it's an array
-    return (
-      <Grid container spacing={2}>
-        {cardData.map((service, index) => (
-          <Grid key={index} item xs={12} sm={6}>
-            <div className='border rounded-md p-4 m-8 hover:shadow-md cursor-pointer flex'>
-              <div className='flex-col'>
-                {service.icon}
-                
-              </div>
-              <div className='flex-col'>
-                <p className=' text-black font-bold text-lg px-10 hover:text-blue-800'>{service}</p>
-              </div>
+  return (
+    <Grid container spacing={2}>
+      {cardData.map((item, index) => (
+        <Grid key={index} item xs={12} sm={6}>
+          <div className='border rounded-md p-4 m-8 hover:shadow-md cursor-pointer flex'>
+            <div className='flex-col'>
+              {item.icon} {/* Render the icon component */}
             </div>
-          </Grid>
-        ))}
-      </Grid>
-    );
-  }
-  
+            <div className='flex-col'>
+              <p class='text-slate-800 font-semibold text-lg hover:text-slate-500 px-8'>{item.service}</p> {/* Render the service name */}
+            </div>
+          </div>
+        </Grid>
+      ))}
+    </Grid>
+  );
+}
 
-  export default MedServicesCard;
+export default MedServicesCard;

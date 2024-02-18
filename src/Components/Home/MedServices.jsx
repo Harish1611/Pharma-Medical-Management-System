@@ -3,17 +3,11 @@ import MedServicesCard from './MedServicesCard';
 import { MedServicesData } from './MedServicesData';
 
 const MedServices = () => {
-  const items = MedServicesData.map((item) => (
-    item.service
-  ));
-
-  console.log(items); // Log the items array to the console
-  
   return (
     <div>
-      <MedServicesCard cardTitle={items} card />
+      <MedServicesCard cardData={MedServicesData} />
     </div>
-  )
+  );
 }
 
 export default MedServices;
