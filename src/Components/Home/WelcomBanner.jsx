@@ -4,6 +4,7 @@ import WelcomBannerCarousel from './WelcomBannerCarousel';
 const WelcomBanner = () => {
   return (
     <div> 
+
       <WelcomBannerCarousel />
 
     </div>

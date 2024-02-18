@@ -1,9 +1,19 @@
-import React from 'react'
+import React from 'react';
+import MedServicesCard from './MedServicesCard';
+import { MedServicesData } from './MedServicesData';
 
 const MedServices = () => {
+  const items = MedServicesData.map((item) => (
+    item.service
+  ));
+
+  console.log(items); // Log the items array to the console
+  
   return (
-    <div>MedServices</div>
+    <div>
+      <MedServicesCard cardTitle={items} card />
+    </div>
   )
 }
 
-export default MedServices
+export default MedServices;
