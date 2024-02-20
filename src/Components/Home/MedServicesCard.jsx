@@ -12,7 +12,7 @@ const MedServicesCard = ({ cardData }) => {
     <Grid container spacing={2}>
       {cardData.map((item, index) => (
         <Grid key={index} item xs={12} sm={6}>
-          <div className='border rounded-md p-4 m-8 hover:shadow-md cursor-pointer flex'>
+          <div className='border rounded-md p-4  hover:shadow-md cursor-pointer flex'>
             <div className='flex-col'>
               {item.icon} {/* Render the icon component */}
             </div>
