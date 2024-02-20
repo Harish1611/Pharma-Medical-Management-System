@@ -1,7 +1,6 @@
 <h2 align="center">
  Pharma Medical Management System - v1.0<br/>
-  <a href="#
-" target="_blank">Live App</a>
+  <a href="https://pharma-medical-management-system.vercel.app/" target="_blank">Live App</a>
 
 </h2>
 
