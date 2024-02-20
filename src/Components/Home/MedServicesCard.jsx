@@ -12,12 +12,12 @@ const MedServicesCard = ({ cardData }) => {
     <Grid container spacing={2}>
       {cardData.map((item, index) => (
         <Grid key={index} item xs={12} sm={6}>
-          <div className='border rounded-md p-4  hover:shadow-md cursor-pointer flex'>
+          <div className='border rounded-md py-4 px-2 sm:p-4  hover:shadow-md cursor-pointer flex overflow-hidden'>
             <div className='flex-col'>
               {item.icon} {/* Render the icon component */}
             </div>
             <div className='flex-col'>
-              <p class='text-slate-800 font-semibold text-lg hover:text-slate-500 px-8'>{item.service}</p> {/* Render the service name */}
+              <p class='text-slate-800 font-semibold text-lg sm:text-lg hover:text-slate-500 px-3 sm:px-8'>{item.service}</p> {/* Render the service name */}
             </div>
           </div>
         </Grid>

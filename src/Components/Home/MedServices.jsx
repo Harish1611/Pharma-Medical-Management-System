@@ -4,7 +4,7 @@ import { MedServicesData } from './MedServicesData';
 
 const MedServices = () => {
   return (
-    <div className=' mx-40 my-20'>
+    <div className=' mx-4 my-10 sm:mx-40 sm:my-20'>
       <MedServicesCard cardData={MedServicesData} />
     </div>
   );
