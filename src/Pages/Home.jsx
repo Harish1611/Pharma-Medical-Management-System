@@ -9,7 +9,6 @@ const Home = () => {
   return (
     <div className="">
       <Nav />
-      <h1 className="black">Home</h1>
 
       <WelcomBanner />
 

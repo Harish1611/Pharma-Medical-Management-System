@@ -1,16 +1,19 @@
+import SliderImage1 from '../../Assets/Slider-Images/2.png'
+import SliderImage2 from '../../Assets/Slider-Images/1.png'
+import SliderImage3 from '../../Assets/Slider-Images/3.png'
+
+
 export const WelcomBannerData = [
   {
-    image: "https://placehold.jp/1600x400.png",
+    image: SliderImage1,
   },
   {
-    image: "https://placehold.jp/1600x400.png",
+    image: SliderImage2,
   },
   {
-    image: "https://placehold.jp/1600x400.png",
+    image: SliderImage3,
   },
-  {
-    image: "https://placehold.jp/1600x400.png",
-  },
+ 
 ];
 
 
