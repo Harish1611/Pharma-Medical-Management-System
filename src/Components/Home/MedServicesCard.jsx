@@ -9,9 +9,9 @@ import { Grid } from '@mui/material';
 
 const MedServicesCard = ({ cardData }) => {
   return (
-    <Grid container spacing={2}>
+    <Grid container spacing={2}  >
       {cardData.map((item, index) => (
-        <Grid key={index} item xs={12} sm={6}>
+        <Grid key={index} item xs={12} sm={6} >
           <div className='border rounded-md py-4 px-2 sm:p-4  hover:shadow-md cursor-pointer flex overflow-hidden'>
             <div className='flex-col'>
               {item.icon} {/* Render the icon component */}
