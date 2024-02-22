@@ -6,13 +6,19 @@ import BatchProcessing from '../Components/BatchProcessing/BatchProcessing';
 import ReportGeneration from '../Components/ReportGeneration/ReportGeneration';
 import Manufacturing from '../Components/Manufacturing/Manufacturing';
 import PackagingAndShipping from '../Components/PackagingAndShipping/PackagingAndShipping';
+import Home from '../Pages/Home';
+import Nav from '../Components/Nav/Nav';
+import Footer from '../Components/Footer/Footer';
 
 const ServiceRoutes = () => {
   return (
     <div>
 
+
+        <Nav />
         <Routes>
             
+           <Route path="/" element={<Home />}></Route>
             <Route path="/batch-processing" element={<BatchProcessing />}></Route>
             <Route path="/report-generation" element={<ReportGeneration />}></Route>
             <Route path="/manufacturing" element={<Manufacturing />}></Route>
@@ -21,7 +27,7 @@ const ServiceRoutes = () => {
             <Route path="/*" element={<PageNotFound />}></Route>
 
         </Routes>
-
+        <Footer />
     </div>
   )
 }

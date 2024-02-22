@@ -4,6 +4,8 @@ import Home from './Pages/Home';
 import AdminRoutes from './Routes/AdminRoutes';
 import ServiceRoutes from './Routes/ServiceRoutes';
 import PageNotFound from './Pages/PageNotFound';
+import Nav from './Components/Nav/Nav';
+import Footer from './Components/Footer/Footer';
 
 function App() {
   return (
@@ -11,14 +13,14 @@ function App() {
       
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<Home />} />
-          
+
           <Route path="/*" element={<ServiceRoutes />} />
           <Route path="/admin/*" element={<AdminRoutes />} />
           <Route path="*" element={<PageNotFound />} />
 
         </Routes>
       </BrowserRouter>
+
     </div>
   );
 }

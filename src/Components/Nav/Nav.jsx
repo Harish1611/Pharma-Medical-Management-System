@@ -17,7 +17,7 @@ function classNames(...classes) {
 
 export default function Nav() {
 
-  const navigation = useNavigate();
+  const navigate = useNavigate();
   return (
     <Disclosure as="nav" className="bg-gray-800">
       {({ open }) => (
@@ -42,7 +42,7 @@ export default function Nav() {
                     className=" h-16 w-auto cursor-pointer"
                     src={logo}
                     alt="Your Company"
-                    onClick={()=>navigation('/')}
+                    onClick={() => navigate('/')}
                   />
 
                   
