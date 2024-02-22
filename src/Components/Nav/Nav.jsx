@@ -1,6 +1,8 @@
 import { Fragment } from 'react'
 import { Disclosure, Menu, Transition } from '@headlessui/react'
 import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline'
+import logo from '../../Assets/logo.png'
+import { useNavigate } from 'react-router-dom'
 
 const navigation = [
   { name: 'Dashboard', href: '#', current: true },
@@ -14,6 +16,8 @@ function classNames(...classes) {
 }
 
 export default function Nav() {
+
+  const navigation = useNavigate();
   return (
     <Disclosure as="nav" className="bg-gray-800">
       {({ open }) => (
@@ -34,13 +38,14 @@ export default function Nav() {
               </div>
               <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
                 <div className="flex flex-shrink-0 items-center">
-                  {/* <img
-                    className="h-8 w-auto"
-                    src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500"
+                  <img
+                    className=" h-16 w-auto cursor-pointer"
+                    src={logo}
                     alt="Your Company"
-                  /> */}
+                    onClick={()=>navigation('/')}
+                  />
 
-                  <h2 className=' font-cinzel font-bold text-green-500'> PMM Systems</h2>
+                  
                 </div>
                 <div className="hidden sm:ml-6 sm:block">
                   <div className="flex space-x-4">
