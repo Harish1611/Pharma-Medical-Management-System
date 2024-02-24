@@ -21,7 +21,7 @@ const MedServicesCard = ({ cardData }) => {
               {item.icon} {/* Render the icon component */}
             </div>
             <div className='flex-col'>
-              <p class='text-slate-800 font-semibold text-lg sm:text-lg hover:text-slate-500 px-3 sm:px-8'>{item.service}</p> {/* Render the service name */}
+              <p class='text-slate-800 font-normal text-lg sm:text-lg hover:text-slate-500 px-3 sm:px-8'>{item.service}</p> {/* Render the service name */}
             </div>
           </div>
         </Grid>
