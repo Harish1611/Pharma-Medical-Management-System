@@ -7,6 +7,8 @@ module.exports = {
     extend: {
       fontFamily: {
         'cinzel': ['Cinzel', 'sans-serif'],
+        'poppins': ['Poppins', 'sans-serif'],
+
       },
     },
   },
