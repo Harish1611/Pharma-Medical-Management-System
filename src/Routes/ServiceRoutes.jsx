@@ -11,6 +11,7 @@ import Nav from '../Components/Nav/Nav';
 import Footer from '../Components/Footer/Footer';
 import RawMaterialResources from '../Components/RawMaterialResources/RawMaterialResources';
 import ResearchAndDevelopment from '../Components/ResearchAndDevelopment/ResearchAndDevelopment';
+import Profile from '../Components/Profile/Profile';
 
 const ServiceRoutes = () => {
   return (
@@ -27,6 +28,8 @@ const ServiceRoutes = () => {
             <Route path="/packaging-shipping" element={<PackagingAndShipping />}></Route>
             <Route path="/raw-material-resources" element={<RawMaterialResources />}></Route>
             <Route path="/research-development" element={<ResearchAndDevelopment />}></Route>
+            <Route path="/profile" element={<Profile />}></Route>
+
 
 
 
