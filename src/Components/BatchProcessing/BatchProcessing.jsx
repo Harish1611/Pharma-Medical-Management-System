@@ -1,8 +1,13 @@
 import React from 'react'
+import HeadingOne from '../UiComponents/HeadingOne'
 
 const BatchProcessing = () => {
   return (
-    <div>BatchProcessing</div>
+    <div className=''>
+
+      <HeadingOne headText="Batch Request Services" />
+
+    </div>
   )
 }
 
