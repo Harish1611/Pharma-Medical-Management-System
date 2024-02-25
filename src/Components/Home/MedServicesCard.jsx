@@ -16,7 +16,7 @@ const MedServicesCard = ({ cardData }) => {
     <Grid container spacing={2}  >
       {cardData.map((item, index) => (
         <Grid key={index} item xs={12} sm={6} >
-          <div className='border rounded-md py-4 px-2 sm:p-4  hover:shadow-md cursor-pointer flex overflow-hidden' onClick={() => navigate(`/${item.url}`)} >
+          <div className='border rounded-md py-4 px-2 mx-8 sm:p-4 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110  duration-300  hover:shadow-md cursor-pointer flex overflow-hidden' onClick={() => navigate(`/${item.url}`)} >
             <div className='flex-col'>
               {item.icon} {/* Render the icon component */}
             </div>
