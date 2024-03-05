@@ -1,8 +1,11 @@
 import React from 'react'
+import NewRawMaterial from './NewRawMaterial'
 
 const RawMaterialResources = () => {
   return (
-    <div>RawMaterialResources</div>
+    <div> 
+      <NewRawMaterial />
+    </div>
   )
 }
 
