@@ -14,13 +14,16 @@ const NewRawMaterial = () => {
           <Grid container spacing={2}>
 
             <Grid item sm={4} xs={12}>
-         <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="username" type="text" placeholder="Resource Name" />
+         <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="resourcename" type="text" placeholder="Resource Name" />
          </Grid>
          <Grid item sm={4} xs={12} >
-         <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="username" type="text" placeholder="Resource Type" />
+         <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="resourcetype" type="text" placeholder="Resource Type" />
          </Grid>
          <Grid item sm={4} xs={12} >
-         <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="username" type="text" placeholder="Requested By" />
+         <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="requestby" type="text" placeholder="Requested By" />
+         </Grid>
+         <Grid item sm={4} xs={12} >
+         <input class="appearance-none  w-full py-2 px-3 text-gray-700 " id="resourcefile" type="file" placeholder="Requested By" />
          </Grid>
          
          <Grid item xs={8}>
