@@ -12,6 +12,7 @@ import Footer from '../Components/Footer/Footer';
 import RawMaterialResources from '../Components/RawMaterialResources/RawMaterialResources';
 import ResearchAndDevelopment from '../Components/ResearchAndDevelopment/ResearchAndDevelopment';
 import Profile from '../Components/Profile/Profile';
+import Login from '../Pages/Login';
 
 const ServiceRoutes = () => {
   return (
@@ -22,6 +23,7 @@ const ServiceRoutes = () => {
         <Routes>
             
            <Route path="/" element={<Home />}></Route>
+           <Route path="/login" element={<Login />}></Route>
             <Route path="/batch-processing" element={<BatchProcessing />}></Route>
             <Route path="/report-generation" element={<ReportGeneration />}></Route>
             <Route path="/manufacturing" element={<Manufacturing />}></Route>
