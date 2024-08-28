@@ -47,7 +47,7 @@ const NewRawMaterial = () => {
          </Grid>
          
          <Grid item xs={12}>
-         <button className="bg-blue-700 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="button">
+         <button className="bg-yellow-500 hover:bg-black text-white font-semibold font-cinzel py-2 px-4 rounded focus:outline-none  focus:shadow-outline" type="button">
         
          Create Resource
          </button>
