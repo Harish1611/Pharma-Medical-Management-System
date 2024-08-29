@@ -13,6 +13,7 @@ import RawMaterialResources from '../Components/RawMaterialResources/RawMaterial
 import ResearchAndDevelopment from '../Components/ResearchAndDevelopment/ResearchAndDevelopment';
 import Profile from '../Components/Profile/Profile';
 import Login from '../Pages/Login';
+import NewRawMaterial from '../Components/RawMaterialResources/NewRawMaterial';
 
 const ServiceRoutes = () => {
   return (
@@ -29,6 +30,8 @@ const ServiceRoutes = () => {
             <Route path="/manufacturing" element={<Manufacturing />}></Route>
             <Route path="/packaging-shipping" element={<PackagingAndShipping />}></Route>
             <Route path="/raw-material-resources" element={<RawMaterialResources />}></Route>
+            <Route path="/raw-material-resources/create-new-resource" element={<NewRawMaterial />}></Route>
+
             <Route path="/research-development" element={<ResearchAndDevelopment />}></Route>
             <Route path="/profile" element={<Profile />}></Route>
 
