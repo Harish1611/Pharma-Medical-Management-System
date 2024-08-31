@@ -1,6 +1,9 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import AddIcon from "@mui/icons-material/Add";
+import { Grid } from "@mui/material";
+
+import DashboardRawCards from "./DashboardRawCards";
 const RawMaterialResources = () => {
   const navigate = useNavigate();
 
@@ -17,6 +20,9 @@ const RawMaterialResources = () => {
           <AddIcon /> Create Resource
         </button>
       </div>
+
+      <DashboardRawCards />
+
     </div>
   );
 };
