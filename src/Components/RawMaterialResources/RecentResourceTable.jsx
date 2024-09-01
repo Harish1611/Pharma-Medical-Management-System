@@ -7,9 +7,9 @@ import {
     getFilteredRowModel,
   } from "@tanstack/react-table";
 
-
+import DebouncedInput from "../UiComponents/DebouncedInput.jsx";
   
-  import {USERS} from './data.js';
+import {USERS} from './data.js';
 import { useState } from "react";
 
 const RecentResourceTable = () => {
@@ -63,8 +63,17 @@ console.log(USERS)
 
     return( 
         <div>
+
+            <div className="mx-2">
+                 <DebouncedInput
+            value={globalFilter ?? ""}
+            onChange={(value) => setGlobalFilter(String(value))}
+            className="bg-transparent outline-none "
+            placeholder="Search by columns..."
+          /> </div>
            
 <div className="overflow-x-scroll mx-2 my-4">
+
         <table className="border border-gray-500 rounded-md shadow-sm w-full text-left">
           <thead className="bg-gray-800">
             {table.getHeaderGroups().map((headerGroup) => (

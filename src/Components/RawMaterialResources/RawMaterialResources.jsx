@@ -5,6 +5,7 @@ import { Grid } from "@mui/material";
 
 import DashboardRawCards from "./DashboardRawCards";
 import RecentResourceTable from "./RecentResourceTable";
+
 const RawMaterialResources = () => {
   const navigate = useNavigate();
 
@@ -23,7 +24,7 @@ const RawMaterialResources = () => {
       </div>
 
       <DashboardRawCards />
-
+     
       <RecentResourceTable />
 
     </div>
