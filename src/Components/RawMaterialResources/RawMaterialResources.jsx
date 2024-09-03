@@ -1,13 +1,19 @@
-import React from "react";
+import React, { useState, useEffect } from 'react';
 import { useNavigate } from "react-router-dom";
 import AddIcon from "@mui/icons-material/Add";
-import { Grid } from "@mui/material";
 
 import DashboardRawCards from "./DashboardRawCards";
 import RecentResourceTable from "./RecentResourceTable";
 
 const RawMaterialResources = () => {
+  
+  useEffect(() => {
+    window.scrollTo(0, 0); 
+  }, []);
+  
   const navigate = useNavigate();
+
+
 
   return (
     <div className=" mx-4 my-10 sm:mx-40 sm:my-20 ">

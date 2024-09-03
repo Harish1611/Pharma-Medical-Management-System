@@ -7,12 +7,17 @@ import {
     getFilteredRowModel,
   } from "@tanstack/react-table";
 
+import React, { useState, useEffect } from 'react';
+
+
 import DebouncedInput from "../UiComponents/DebouncedInput.jsx";
   
 import {USERS} from './data.js';
-import { useState } from "react";
 
 const RecentResourceTable = () => {
+
+   
+
 
     const [globalFilter, setGlobalFilter] = useState("");
 

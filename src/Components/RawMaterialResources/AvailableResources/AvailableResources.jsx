@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
 import {
     flexRender,
@@ -16,6 +16,11 @@ import HeadingOne from '../../UiComponents/HeadingOne.jsx';
 const AvailableResources = () => {
 
     const [globalFilter, setGlobalFilter] = useState("");
+
+    useEffect(() => {
+        window.scrollTo(0, 0); 
+    }, []);
+
 
     const columnHelper = createColumnHelper();
 
