@@ -9,6 +9,9 @@ export function createRandomUser() {
     RequestedFor: faker.person.lastName(),
     Quantity: faker.datatype.number(400),
     StoredAt: faker.person.lastName(),
+    AddedBy: faker.person.firstName(),
+    CreatedAt: faker.date.anytime()
+  
 
   };
 }
