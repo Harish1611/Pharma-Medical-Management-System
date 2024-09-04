@@ -11,7 +11,8 @@ import DebouncedInput from '../../UiComponents/DebouncedInput';
 
 import { USERS } from '../data.js'
 import HeadingOne from '../../UiComponents/HeadingOne.jsx';
-
+import EditNoteIcon from '@mui/icons-material/EditNote';
+import { IconButton } from '@mui/material';
 
 const AvailableResources = () => {
 
@@ -61,10 +62,28 @@ const AvailableResources = () => {
             header: "Created At",
         }),
 
+        columnHelper.accessor("", {
+            cell: (info) => (
+              <div style={{ display: 'flex', gap: '0.5rem' }}>
+              
+             
+                <IconButton onClick={() => handleEdit(info.row.original)}>
+                 <EditNoteIcon className="text-yellow-500"  />
+                 </IconButton>
+      
+                
+              </div>
+            ),
+            header: "Actions",
+          }),
 
         
        
     ];
+
+    const handleEdit = (x) => {
+
+    } 
 
 
     const table = useReactTable({
