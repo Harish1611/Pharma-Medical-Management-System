@@ -29,7 +29,7 @@ const DashboardRawCards = () => {
         </Grid>
 
         <Grid item md={4} xs={12}>
-          <div className=" text-left border rounded-md py-6 px-6 mx-2 sm:p-6  hover:-translate-y-1  hover:shadow-md cursor-pointer flex  align-middle overflow-hidden">
+          <div onClick={ () => navigate('/raw-material-resources/resource-requests')} className=" text-left border rounded-md py-6 px-6 mx-2 sm:p-6  hover:-translate-y-1  hover:shadow-md cursor-pointer flex  align-middle overflow-hidden">
             <div className="text-yellow-400 mx-2">
               <AddHomeWorkIcon />
             </div>

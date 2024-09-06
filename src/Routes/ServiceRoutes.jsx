@@ -15,6 +15,7 @@ import Profile from '../Components/Profile/Profile';
 import Login from '../Pages/Login';
 import NewRawMaterial from '../Components/RawMaterialResources/NewRawMaterial';
 import AvailableResources from '../Components/RawMaterialResources/AvailableResources/AvailableResources';
+import ResourceRequests from '../Components/RawMaterialResources/ResourceRequests/ResourceRequests';
 
 const ServiceRoutes = () => {
   return (
@@ -33,6 +34,7 @@ const ServiceRoutes = () => {
             <Route path="/raw-material-resources" element={<RawMaterialResources />}></Route>
             <Route path="/raw-material-resources/create-new-resource" element={<NewRawMaterial />}></Route>
             <Route path="/raw-material-resources/available-resources" element={<AvailableResources />}></Route>
+            <Route path="/raw-material-resources/resource-requests" element={<ResourceRequests />}></Route>
 
             <Route path="/research-development" element={<ResearchAndDevelopment />}></Route>
             <Route path="/profile" element={<Profile />}></Route>
