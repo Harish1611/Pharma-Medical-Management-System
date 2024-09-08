@@ -5,6 +5,7 @@ import AddHomeWorkIcon from "@mui/icons-material/AddHomeWork";
 import RuleFolderIcon from '@mui/icons-material/RuleFolder';
 import HeadingOne from "../../UiComponents/HeadingOne";
 import TopResourceCards from "./TopResourceCards";
+import RequestCards from "./RequestCards";
 const ResourceRequests = () => {
   return (
     <div>
@@ -12,6 +13,10 @@ const ResourceRequests = () => {
       <div className="mx-4 my-10 sm:mx-40 sm:my-20">
 
         <TopResourceCards />
+
+        <RequestCards />
+
+
       
       </div>
     </div>
