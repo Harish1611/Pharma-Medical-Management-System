@@ -22,7 +22,7 @@ const TopResourceCards = () => {
                 Resource Requests
               </h2>
               <div className="mx-2">
-                <span class="bg-yellow-100 text-yellow-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded-full dark:bg-yellow-900 dark:text-yellow-300">
+                <span className="bg-yellow-100 text-yellow-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded-full dark:bg-yellow-900 dark:text-yellow-300">
                   4
                 </span>
               </div>
@@ -37,7 +37,7 @@ const TopResourceCards = () => {
                 Requests on Hold
               </h2>
               <div className="mx-2">
-                <span class="bg-yellow-100 text-yellow-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded-full dark:bg-red-900 dark:text-red-300">
+                <span className="bg-yellow-100 text-yellow-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded-full dark:bg-red-900 dark:text-red-300">
                   2
                 </span>
               </div>
@@ -52,7 +52,7 @@ const TopResourceCards = () => {
                 Closed Requests
               </h2>
               <div className="mx-2">
-                <span class="bg-yellow-100 text-yellow-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded-full dark:bg-green-700 dark:text-green-300">
+                <span className="bg-yellow-100 text-yellow-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded-full dark:bg-green-700 dark:text-green-300">
                   120
                 </span>
               </div>

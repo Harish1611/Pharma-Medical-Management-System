@@ -1,11 +1,9 @@
 import React from "react";
-import { Grid } from "@mui/material";
-import PauseCircleFilledIcon from '@mui/icons-material/PauseCircleFilled';
-import AddHomeWorkIcon from "@mui/icons-material/AddHomeWork";
-import RuleFolderIcon from '@mui/icons-material/RuleFolder';
 import HeadingOne from "../../UiComponents/HeadingOne";
 import TopResourceCards from "./TopResourceCards";
 import RequestCards from "./RequestCards";
+import { dummyResource } from "./dummy-resource"; 
+
 const ResourceRequests = () => {
   return (
     <div>
@@ -14,10 +12,17 @@ const ResourceRequests = () => {
 
         <TopResourceCards />
 
-        <RequestCards />
+       
+        {dummyResource.map((resource, index) => (
+          <RequestCards
+            key={index} 
+            resource_name={resource.resource_name}
+            quantity={resource.quantity}
+            requested_by={resource.requested_by}
+            requested_date={resource.requested_date}
+          />
+        ))}
 
-
-      
       </div>
     </div>
   );

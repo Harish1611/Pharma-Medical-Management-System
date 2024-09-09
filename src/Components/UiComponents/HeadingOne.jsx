@@ -21,7 +21,7 @@ const HeadingOne = (props) => {
 
         <div className='pl-10 text-left'>
             <h2 className=' font-bold font-cinzel text-lg sm:text-2xl pt-8 pb-2  '> {props.headText} </h2>
-            <hr class="w-48 h-1  bg-[#FFDE59] border-0 rounded " />
+            <hr className="w-48 h-1  bg-[#FFDE59] border-0 rounded " />
 
         </div>
         </animated.div>
