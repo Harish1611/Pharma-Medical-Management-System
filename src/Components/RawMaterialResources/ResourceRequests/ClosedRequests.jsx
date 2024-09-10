@@ -1,8 +1,8 @@
 import React from 'react';
 import TopResourceCards from './TopResourceCards';
 import HeadingOne from '../../UiComponents/HeadingOne';
-import RequestCards from "./RequestCards";
 import { dummyResource } from "./dummy-resource"; 
+import ClosedCards from './ClosedCards';
 
 const ClosedRequests = () => {
     return (
@@ -13,7 +13,7 @@ const ClosedRequests = () => {
 
             
         {dummyResource.map((resource, index) => (
-          <RequestCards
+          <ClosedCards
             key={index} 
             resource_name={resource.resource_name}
             quantity={resource.quantity}
