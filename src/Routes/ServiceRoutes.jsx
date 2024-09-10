@@ -18,6 +18,7 @@ import AvailableResources from '../Components/RawMaterialResources/AvailableReso
 import ResourceRequests from '../Components/RawMaterialResources/ResourceRequests/ResourceRequests';
 import RequestsOnHold from '../Components/RawMaterialResources/ResourceRequests/RequestsOnHold';
 import ClosedRequests from '../Components/RawMaterialResources/ResourceRequests/ClosedRequests';
+import ResourceIssues from '../Components/RawMaterialResources/ResourceIssues.jsx/ResourceIssues';
 
 const ServiceRoutes = () => {
   return (
@@ -39,6 +40,7 @@ const ServiceRoutes = () => {
             <Route path="/raw-material-resources/resource-requests" element={<ResourceRequests />}></Route>
             <Route path="/raw-material-resources/resource-on-hold" element={<RequestsOnHold />}></Route>
             <Route path="/raw-material-resources/closed-resources" element={<ClosedRequests />}></Route>
+            <Route path="/raw-material-resources/resource-issues" element={<ResourceIssues />}></Route>
 
             <Route path="/research-development" element={<ResearchAndDevelopment />}></Route>
             <Route path="/profile" element={<Profile />}></Route>
