@@ -1,10 +1,8 @@
 import React from "react";
 import { Grid } from "@mui/material";
 import PauseCircleFilledIcon from '@mui/icons-material/PauseCircleFilled';
-import AddHomeWorkIcon from "@mui/icons-material/AddHomeWork";
 import RuleFolderIcon from '@mui/icons-material/RuleFolder';
 import CampaignIcon from '@mui/icons-material/Campaign';
-import HeadingOne from "../../UiComponents/HeadingOne";
 import { useNavigate } from "react-router-dom";
 const ResourceCards = () => {
 
@@ -31,7 +29,7 @@ const ResourceCards = () => {
             </div>
           </Grid>
           <Grid item md={4} xs={12}>
-            <div  onClick={ () => navigate('/raw-material-resources/')} className=" text-left border rounded-md py-6 px-6 mx-2 sm:p-6  hover:-translate-y-1  hover:shadow-md cursor-pointer flex  align-middle overflow-hidden">
+            <div  onClick={ () => navigate('/raw-material-resources/issues-on-hold')} className=" text-left border rounded-md py-6 px-6 mx-2 sm:p-6  hover:-translate-y-1  hover:shadow-md cursor-pointer flex  align-middle overflow-hidden">
               <div className="text-yellow-400 mx-2">
                 <PauseCircleFilledIcon />
               </div>

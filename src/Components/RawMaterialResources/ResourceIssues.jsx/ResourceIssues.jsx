@@ -1,6 +1,5 @@
 import React from 'react';
 import HeadingOne from '../../UiComponents/HeadingOne';
-import ScaleIcon from '@mui/icons-material/Scale';
 import ContactMailIcon from '@mui/icons-material/ContactMail';
 import AccessTimeFilledIcon from '@mui/icons-material/AccessTimeFilled';
 import ResourceCards from './ResourceCards';
