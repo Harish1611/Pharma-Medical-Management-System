@@ -3,12 +3,14 @@ import HeadingOne from '../../UiComponents/HeadingOne';
 import ScaleIcon from '@mui/icons-material/Scale';
 import ContactMailIcon from '@mui/icons-material/ContactMail';
 import AccessTimeFilledIcon from '@mui/icons-material/AccessTimeFilled';
+import ResourceCards from './ResourceCards';
 
 const ResourceIssues = () => {
     return (
         <div>
             <HeadingOne headText="Resource Issues" />
             <div className="mx-4 my-10 sm:mx-40 sm:my-20">
+              <ResourceCards />
             <div className=" text-left border rounded-md py-6 px-6 mx-2 my-4 sm:p-6  bg-slate-50   cursor-pointer  overflow-hidden">
             <div>
         <h2 className="text-md font-poppins font-semibold">
