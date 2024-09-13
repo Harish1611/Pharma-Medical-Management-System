@@ -51,9 +51,10 @@ const RecentResourceTable = () => {
         }),
       ];
       
-  
+    const recent10resources = USERS.slice(0, 10);
+
     const table = useReactTable({
-      data: USERS,
+      data: recent10resources,
       columns,
       state: {
         globalFilter,
@@ -63,7 +64,7 @@ const RecentResourceTable = () => {
     });
   
 
-console.log(USERS)
+// console.log(USERS)
     
 
     return( 
