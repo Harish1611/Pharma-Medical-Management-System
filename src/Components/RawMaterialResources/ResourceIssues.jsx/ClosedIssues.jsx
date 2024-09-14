@@ -15,41 +15,15 @@ const ClosedIssues = () => {
             <h2 className="text-md font-poppins font-semibold">
               Received 20kg Sodium Hydrate instead of 40kg
             </h2>
-            <div className=" sm:flex  ">
-              {/* <p className=" text-gray-600 font-poppins text-sm pt-1">   <ScaleIcon style={{ width: '14px', height: '14px' }} className=" text-gray-500" />  Quantity: {props.quantity} </p> */}
-              <p className=" text-gray-600 font-poppins text-sm pt-1 ">
-             
-                <ContactMailIcon
-                  style={{ width: "14px", height: "14px" }}
-                  className=" text-gray-500"
-                />
-                Issue Rised By: Harish Naidu B
-              </p>
-              <p className=" text-gray-600 font-poppins text-sm pt-1 sm:pl-6">
-              
-                <AccessTimeFilledIcon
-                  style={{ width: "14px", height: "14px" }}
-                  className=" text-gray-500"
-                />
-                Issue Rised Date: 05-09-24
-              </p>
-              <p className=" text-gray-600 font-poppins text-sm pt-1 sm:pl-6">
-               
-                <ContactMailIcon
-                  style={{ width: "14px", height: "14px" }}
-                  className=" text-gray-500"
-                />
-                Closed By: cardi B
-              </p>
-              <p className=" text-gray-600 font-poppins text-sm pt-1 sm:pl-6">
-             
-                <AccessTimeFilledIcon
-                  style={{ width: "14px", height: "14px" }}
-                  className=" text-gray-500"
-                />
-                Closed Date: 14-09-24
-              </p>
-            </div>
+           
+
+<div className=" sm:flex  ">
+    <p className=" text-gray-600 font-poppins text-sm pt-1 ">  <ContactMailIcon style={{ width: '14px', height: '14px' }} className=" text-gray-500" />  Issue Rised By: Harish Naidu B </p>
+    <p className=" text-gray-600 font-poppins text-sm pt-1 sm:pl-6">  <AccessTimeFilledIcon style={{ width: '14px', height: '14px' }} className=" text-gray-500" />  Issue Rised Date: 05-09-24 </p>
+    <p className=" text-gray-600 font-poppins text-sm pt-1 sm:pl-6">  <ContactMailIcon style={{ width: '14px', height: '14px' }} className=" text-gray-500" />  Closed By: cardi B </p>
+    <p className=" text-gray-600 font-poppins text-sm pt-1 sm:pl-6">  <AccessTimeFilledIcon style={{ width: '14px', height: '14px' }} className=" text-gray-500" />   Closed Date: 14-09-24 </p>
+
+    </div>
           </div>
 
           <div className="flex sm:justify-end  pt-2 sm:pt-1 ">

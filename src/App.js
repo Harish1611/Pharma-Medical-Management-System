@@ -7,12 +7,13 @@ import PageNotFound from './Pages/PageNotFound';
 import Nav from './Components/Nav/Nav';
 import Footer from './Components/Footer/Footer';
 
+
 function App() {
   return (
     <div>
       
       <BrowserRouter>
-        <Routes>
+        <Routes >
 
           <Route path="/*" element={<ServiceRoutes />} />
           <Route path="/admin/*" element={<AdminRoutes />} />
