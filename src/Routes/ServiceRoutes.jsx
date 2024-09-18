@@ -21,6 +21,9 @@ import ClosedRequests from '../Components/RawMaterialResources/ResourceRequests/
 import ResourceIssues from '../Components/RawMaterialResources/ResourceIssues.jsx/ResourceIssues';
 import IssuesOnHold from '../Components/RawMaterialResources/ResourceIssues.jsx/IssuesOnHold';
 import ClosedIssues from '../Components/RawMaterialResources/ResourceIssues.jsx/ClosedIssues';
+import StartBatch from '../Components/BatchProcessing/StartBatch/StartBatch';
+import OnGoingBatches from '../Components/BatchProcessing/OnGoingBatches/OnGoingBatches';
+import CompletedBatches from '../Components/BatchProcessing/CompletedBatches/CompletedBatches';
 
 const ServiceRoutes = () => {
   return (
@@ -33,6 +36,10 @@ const ServiceRoutes = () => {
            <Route path="/" element={<Home />}></Route>
            <Route path="/login" element={<Login />}></Route>
             <Route path="/batch-processing" element={<BatchProcessing />}></Route>
+            <Route path="/batch-processing/start-batch" element={<StartBatch />}></Route>
+            <Route path="/batch-processing/ongoing-batches" element={<OnGoingBatches />}></Route>
+            <Route path="/batch-processing/completed-batches" element={<CompletedBatches />}></Route>
+
             <Route path="/report-generation" element={<ReportGeneration />}></Route>
             <Route path="/manufacturing" element={<Manufacturing />}></Route>
             <Route path="/packaging-shipping" element={<PackagingAndShipping />}></Route>

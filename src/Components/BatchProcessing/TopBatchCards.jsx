@@ -13,7 +13,7 @@ const TopBatchCards = () => {
     <div>
       <Grid container spacing={1} className="py-8">
         <Grid item md={4} xs={12}>
-          <div  onClick={ () => navigate('/')} className=" text-left border rounded-md py-6 px-6 mx-2 sm:p-6  hover:-translate-y-1  hover:shadow-md cursor-pointer flex  align-middle overflow-hidden">
+          <div  onClick={ () => navigate('/batch-processing/start-batch')} className=" text-left border rounded-md py-6 px-6 mx-2 sm:p-6  hover:-translate-y-1  hover:shadow-md cursor-pointer flex  align-middle overflow-hidden">
             <div className="text-yellow-400 mx-2">
               <MedicationLiquidIcon />
             </div>
@@ -25,7 +25,7 @@ const TopBatchCards = () => {
         </Grid>
 
         <Grid item md={4} xs={12}>
-          <div onClick={ () => navigate('/')} className=" text-left border rounded-md py-6 px-6 mx-2 sm:p-6  hover:-translate-y-1  hover:shadow-md cursor-pointer flex  align-middle overflow-hidden">
+          <div onClick={ () => navigate('/batch-processing/ongoing-batches')} className=" text-left border rounded-md py-6 px-6 mx-2 sm:p-6  hover:-translate-y-1  hover:shadow-md cursor-pointer flex  align-middle overflow-hidden">
             <div className="text-yellow-400 mx-2">
               <AddHomeWorkIcon />
             </div>
@@ -41,7 +41,7 @@ const TopBatchCards = () => {
         </Grid>
 
         <Grid item md={4} xs={12}>
-          <div onClick={ () => navigate('/')} className=" text-left border rounded-md py-6 px-6 mx-2 sm:p-6  hover:-translate-y-1  hover:shadow-md cursor-pointer flex  align-middle overflow-hidden">
+          <div onClick={ () => navigate('/batch-processing/completed-batches')} className=" text-left border rounded-md py-6 px-6 mx-2 sm:p-6  hover:-translate-y-1  hover:shadow-md cursor-pointer flex  align-middle overflow-hidden">
             <div className="text-yellow-400 mx-2">
               <AssignmentTurnedInIcon />
             </div>
