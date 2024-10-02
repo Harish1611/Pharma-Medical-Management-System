@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import {getData} from '../../../API/api.js'
 
 import {
     flexRender,
@@ -17,9 +18,32 @@ import { IconButton } from '@mui/material';
 const AvailableResources = () => {
 
     const [globalFilter, setGlobalFilter] = useState("");
+    const [data, setData] = useState(null);
+    const [loading, setLoading] = useState(true);
+    const [error, setError] = useState(null);
 
     useEffect(() => {
         window.scrollTo(0, 0); 
+    }, []);
+
+    useEffect(() => {
+
+        const fetchResources = async () => {
+            try {
+              const result = await getData('/resources/get-resources');  // Resource GET Requqst
+              setData(result);
+              console.log(data)
+            } catch (err) {
+              setError('Failed to fetch data');
+              console.log(err)
+
+            } finally {
+              setLoading(false);
+            }
+          };
+      
+          fetchResources();
+        
     }, []);
 
 
