@@ -24,6 +24,15 @@ chrome-user-data
 *.swp
 *.swo
 
+# Ignore environment variable files
+.env
+.env.development
+.env.production
+.env.*      
+# For any additional environments like .env.staging, .env.test, etc.
+
+
+
 packages/react-devtools-core/dist
 packages/react-devtools-extensions/chrome/build
 packages/react-devtools-extensions/chrome/*.crx
